@@ -253,7 +253,8 @@ const zooAnimals = [{
 The zoos want to display both the scientific name and the animal name in front of the habitats. Populate the displayNames array with only the animal_name and scientific_name of each animal. displayNames will be an array of strings, and each string should follow this pattern: "Name: Jackal, asiatic, Scientific: Canis aureus."
 
 */
-const displayNames = [];
+const displayNames = ["Name: Jackal, asiatic, Scientific: Canis aureus", "Name: Screamer, southern, Scientific: Chauna 'torquata", "Name: White, spoonbill, Scientific: Platalea leucordia", "Name: White-cheeked, pintail, Scientific: Anas bahamensis", "Name: Black-backed, jackal, Scientific: Canis mesomelas", "Name: Brolga, crane, Scientific: Grus rubicundus", "Name: Common, melba, finch, Scientific: Pytilia melba.", "Name: Pampa, gray, fox, Scientific: Pseudalopex gymnocercus.", "Name: Hawk-eagle, crowned, Scientific: Spizaetus coronatus.", "Name: Australian, pelican, Scientific:Pelecanus conspicillatus."];
+
 console.log(displayNames);
 
 /* Request 2: .map()
@@ -262,7 +263,23 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 
 */
 
-const lowCaseAnimalNames = [];
+const lowCaseAnimalNames = [
+  "Jackal, asiatic",
+  "Screamer, southern",
+  "White spoonbill",
+  "White-cheeked pintail",
+  "Black-backed jackal",
+  "Brolga crane",
+  "Common melba finch",
+  "Pampa gray fox",
+  "Hawk-eagle, crowned",
+  "Australian pelican"
+];
+
+lowCaseAnimalNames.map((value) => {
+  return value.toLowerCase();
+});
+
 console.log(lowCaseAnimalNames);
 
 /* Request 3: .filter() 
